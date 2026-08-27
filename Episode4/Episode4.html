@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Image</title>
+    <style type="text/css">
+
+        img {
+            width: 500px;
+        }
+
+        #blue {
+            width: 50px;
+            height: 50px;
+            background-color: #4757a2;
+            border-radius: 50px;
+            /* display: inline; */
+            float: left;
+            margin: 0 8px;
+        }
+
+        
+        #red {
+            width: 50px;
+            height: 50px;
+            background-color: #ff7f84;
+            border-radius: 50px;
+            float: left;
+            margin: 0 8px;
+            /* display: inline; */
+        }
+
+        
+        #green {
+            width: 50px;
+            height: 50px;
+            background-color: #01b3b7;
+            border-radius: 50px;
+            float: left;
+            margin: 0 8px;
+            /* display: inline */
+        }
+
+                
+    </style>
+</head>
+<body>
+    
+    <div>
+        <img id="nintendo" src="foto/blue.jpg">
+    </div>
+    
+    <div>
+        <h1>Pilihan Warna</h1>
+        <div id="blue"></div>
+        <div id="red"></div>
+        <div id="green"></div>
+    </div>
+
+    <script type="text/javascript">
+
+        document.getElementById("blue").onclick = function () {
+            document.getElementById("nintendo").src ="foto/blue.jpg";
+        }
+
+        document.getElementById("red").onclick = function () {
+            document.getElementById("nintendo").src ="foto/red.jpg";
+        }
+
+        document.getElementById("green").onclick = function () {
+            document.getElementById("nintendo").src ="foto/green.jpg";
+        }
+
+    </script>
+</body>
+</html>
