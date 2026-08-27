@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style type="text/css">
+    
+        #Teks1 {
+            color: black;
+            font-size: 30px;
+        }
+
+        #Teks2 {
+            color: black;
+            font-size: 30px;
+        }
+
+        img {
+            width: 200px;
+            margin: 15px 0px ;
+            border-radius: 20px;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <!-- LOGIKANYA IALAH KETIKA BUTTON DI KLIK H1 AKAN BERUBAH WARNA -->
+        <h1 id="Teks1">Hello Fadhil!</h1> 
+        <button id="biru">Biru</button>
+        <button id="merah">Merah</button>
+
+        <h1 id="Teks2">Hello Mpruy</h1>
+        <button id="perbesar">Perbesar</button>
+        <button id="perkecil">Perkecil</button>
+
+        <!-- dan ada foto yang ketika di klik menghilang -->
+        
+    </div>
+
+    <div>
+        <img id="Donald" src="Image/Donald.png">
+    </div>
+    
+    <script type="text/javascript">
+
+        // Mengubah warna font
+        document.getElementById("biru").onclick = function() {
+            document.getElementById("Teks1").style.color = "blue"  ;
+        }
+
+        document.getElementById("merah").onclick = function() {
+            document.getElementById("Teks1").style.color = "red"  ;
+        }
+
+        // Mengubah ukuran font
+        document.getElementById("perbesar").onclick = function() {
+            document.getElementById("Teks2").style.fontSize = "100px" ;
+        }
+
+        document.getElementById("perkecil").onclick = function() {
+            document.getElementById("Teks2").style.fontSize = "10px" ;
+        }
+
+        //Menghilangkan gambar
+        document.getElementById("Donald").onclick = function () {
+            document.getElementById("Donald").style.display = "none"
+        }
+        // mengubah teks
+        // document.getElementById("myButton").onclick = function() {
+        //     document.getElementById("text").innerHTML = "Hi Mpruy"
+        //         ;
+        // }
+    </script>
+</body>
+</html>
