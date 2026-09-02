@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Kamu punya variabel pertama bernama sapaan yang isinya teks manual: "Halo, pesan kamu adalah: " -->
+    <!-- Kamu punya variabel kedua bernama pesan yang isinya mengambil teks dari <textarea> (sama seperti kodemu sekarang). -->
+    <!-- Kamu punya variabel ketiga bernama hasil yang menggabungkan isi sapaan dan pesan menggunakan tanda tambah (+). -->
+    <!-- Tampilkan hasil tersebut di dalam alert(...). -->
+
+    <h1>Masukkan Text:</h1>
+    <P id="pruy">Pesan kamu adalah: </P>
+
+    <textarea id="kotak"></textarea> <!-- kotak tempat pengguna memasukkan teks -->
+
+    <button id="tampilin">  <!-- tombol untuk menjalankan aksi -->
+        Tampilkan Alert
+    </button>
+
+    <script type="text/javascript"> 
+
+        // document.getElementById("tampilin").onclick = function() {
+        //     document.getElementById("tampilin").value;
+        // }
+        // var text = "hello world"
+        // alert(text);
+        document.getElementById("tampilin").onclick = function() {
+        
+        let pesan = document.getElementById("kotak").value;
+        let pesan2 = "Pesan kamu adalah: ";
+        let gabungkan = pesan2 + pesan;
+        
+        alert(gabungkan);
+        }
+    </script>
+
+</body>
+</html>

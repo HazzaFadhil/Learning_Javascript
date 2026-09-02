@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <textarea id="kotak"></textarea>
+
+    <button id="tampilin">  <!-- tombol untuk menjalankan aksi -->
+        Tampilkan Alert
+    </button>
+
+    <p>Halllooo</p>
+    
+    <script type="text/javascript"> 
+    
+
+    document.getElementById("tampilin").onclick = function() {
+        
+        const sapaan = "Halo! ";
+        let hasil = sapaan;
+        let pesan = document.getElementById("kotak").value;
+        let hasul = hasil + pesan; // Artinya: hasil = hasil + teksInput
+        alert(hasul);
+        // let hasil = document.getElementById("sapaan").value;
+        // let pesan = document.getElementById("kotak").value;
+        // let gabungkan = hasil + pesan;
+        
+        
+        }
+
+
+    </script>
+</body>
+</html>

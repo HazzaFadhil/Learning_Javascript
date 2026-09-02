@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Masukkan Text:</h1>
+    <textarea id="kotak"></textarea> <!-- kotak tempat pengguna memasukkan teks -->
+
+    <button id="tampilin">  <!-- tombol untuk menjalankan aksi -->
+        Tampilkan Alert
+    </button>
+
+    <script type="text/javascript"> 
+
+        // document.getElementById("tampilin").onclick = function() {
+        //     document.getElementById("tampilin").value;
+        // }
+        // var text = "hello world"
+        // alert(text);
+        document.getElementById("tampilin").onclick = function() {
+        
+        let pesan = document.getElementById("kotak").value;
+        
+        alert(pesan);
+        }
+    </script>
+
+</body>
+</html>
