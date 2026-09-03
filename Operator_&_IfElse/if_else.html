@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Masukkan nama anda</h1>
+    <textarea id="kotak"></textarea><br> 
+    <button id="kirim">Submit</button>
+
+    <script type="text/javascript"> 
+    //Latihannya ialah Elseif dimana ada lebih dari 2 kemungkinan seperti 
+    // jika bernama fadhil akan seperti apa dan jika bernama zakki akan 
+    // seperti apa
+
+    document.getElementById("kirim").onclick = function() {
+        let pesan = document.getElementById("kotak").value;
+        let f = "fadhil";
+        let z = "zakki";
+
+        if (pesan == "fadhil") {
+            alert("kamu sebagai admin")
+        } else if (pesan == "zakki") {
+            alert("kamu sebagai tamu")
+        } else {
+            alert("kamu ditolak")
+        }
+            
+    }
+    </script>
+</body>
+</html>
