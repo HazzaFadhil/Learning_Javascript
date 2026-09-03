@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<body>
+    <H1>MENGECEK NAMA ANDA</H1>
+    <textarea id="kotak"></textarea><br>
+    <button id="submit">Submit</button>
+
+    <script type="text/JavaScript">
+        // let umur = 17;
+
+        // if (umur >= 17) {
+        //     alert("boleh buat ktp");
+        // } else{
+        //     alert("tidak boleh buat ktp");
+        // }
+        
+        // if (kondisi) {
+        //     jajaja
+        // } else {
+        //     jajaja
+        // }
+
+        //LATIHANNYA IALAH MEMBUAT APLIKASI PENGECEKAN NAMA PENGGUNA.
+        //Ambil nama di textarea, buat IF yang sama dengan "fadhil" dan tampilkan alert diterima
+        //jika bukan fadhil maka ditolak
+
+        document.getElementById("submit").onclick = function() {
+
+        let pesan = document.getElementById("kotak").value;
+        let nama = "fadhil" 
+        if (pesan == "fadhil") {
+            alert("akses diterima")
+        } else {
+            alert("kamu bukan fadhil")
+        }
+
+        }
+
+    </script>
+</body>
+</html>

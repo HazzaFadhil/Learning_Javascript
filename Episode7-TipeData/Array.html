@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TipeData</title>
+</head>
+<body>
+
+    <h1>Masukkan Nama anda</h1>
+    <textarea id="kotak"> </textarea>
+
+    <button id="tampilin">  <!-- tombol untuk menjalankan aksi -->
+        Tampilkan Alert
+    </button>
+
+    <script> 
+
+    document.getElementById("tampilin").onclick = function() {
+        
+        // let a = "50";
+        // let b = 50;
+        // let c = a + b;
+        // dari textarea di gabung dengan sapaan (Selamat datang), 
+        // dan peran sebagai administrator.
+        // urutannya sapaan -> nama -> administrator.
+
+        
+        let fadhil = {
+            sapaan: "Selamat datang, ",
+            peran: " sebagai (administrator)",
+            keahlian: "sholeh",
+            umur: 19,
+            lulus: true
+        };
+
+        let nama = document.getElementById("kotak").value;
+        let hasil = fadhil.sapaan + nama + fadhil.peran;
+        // Di JavaScript, membuat variabel tanpa let atau const 
+        // akan menjadikannya variabel global secara tidak sengaja. 
+        // Ini berisiko bikin bug di proyek yang lebih besar.
+        
+        alert(hasil);
+        
+        }
+    </script>
+</body>
+</html>
