@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <!-- switch itu kaya lif, ketika kamu mencet lantai 2 maka lift akan muncul ke lantai 2 bukan 3. -->
+
+    <h1>HALOO KALI INI KITA BELAJAR SWITCH</h1>
+    <textarea id="kotak"></textarea><br>
+    <button id="kirim">Submit</button>
+    
+    <script type="text/javascript">
+
+        document.getElementById("kirim").onclick = function() {
+
+            let pesan = document.getElementById("kotak").value;
+            
+            
+            switch (pesan) {
+                case "fadhil":
+                    alert("kamu sebagai admin!");
+                    break;
+                case "zakki":
+                    alert("kamu sebagai tamu");
+                    break;
+                default:
+                    alert("lu siape");
+            }
+        }
+    </script>
+</body>
+</html>
