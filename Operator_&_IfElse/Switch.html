@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switch</title>
 </head>
+
+<style type="text/css">
+    button {
+        color: red;
+        background-color: black;
+    }
+
+    h1 {
+        font-size:30px
+    }
+</style>
+
 <body>
+    
     <!-- switch itu kaya lif, ketika kamu mencet lantai 2 maka lift akan muncul ke lantai 2 bukan 3. -->
 
     <h1>HALOO KALI INI KITA BELAJAR SWITCH</h1>
     <textarea id="kotak"></textarea><br>
+    <input type="number">
     <button id="kirim">Submit</button>
     
     <script type="text/javascript">
@@ -18,7 +32,6 @@
 
             let pesan = document.getElementById("kotak").value;
             
-
             switch (pesan) {
                 case "fadhil":
                     alert("kamu sebagai admin!");
