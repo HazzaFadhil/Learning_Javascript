@@ -27,11 +27,13 @@
 
             document.getElementById("kotak").value;
             let tim = ["Fadhil", "Zakki", "Budi"];
+            let hasil = "";
 
             for (let i = 0; i < tim.length; i++) {
-                alert("Anggota tim ke-" + i + "adalah" + tim[i]);
-            
+                // alert("Anggota tim ke-" + i + "adalah " + tim[i] + hasil + " \n");
+                hasil += tim[i] + "\n";
             }
+            document.getElementById("kotak").value = hasil;
             
         }
         

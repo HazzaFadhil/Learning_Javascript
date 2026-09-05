@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <textarea id="kotak"></textarea>
+
+    <script type="text/javascript">
+        let tim = ["Fadhil", "Zakki", "Budi"];
+        let i = 0;
+        let hasil = "";
+
+        while (i < tim.length) {
+            hasil += tim[i] + "\n";
+
+            i++;
+        }
+
+        document.getElementById("kotak").value = hasil;
+
+    </script>
+</body>
+</html>
