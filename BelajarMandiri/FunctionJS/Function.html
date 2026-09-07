@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Didalam fungsi itu ada deklarasi atau pemanggilan, parameter & return, scope -->
+    <textarea id="kotak"></textarea><br>
+    <button id="kirim">SUBMIT </button>
+
+    <script type="text/javascript">
+        // function tampilkan() {
+        //     let isi = document.getElementById("kotak").value;
+        //     alert("isi kotaknya adalah: " + isi);
+        // }
+
+        // document.getElementById("kirim").onclick = function() {
+        //     tampilkan(); 
+        // } 
+        // DIATAS INI TIDAK MEMAKAI PARAMETER
+
+        // function tampilkan(teks) {
+        //     alert("isi kotaknya adalah: " + teks);
+        // }
+
+        // document.getElementById("kirim").onclick = function() {
+        //     let isi =document.getElementById("kotak").value;
+
+        //     tampilkan(isi);
+        // }
+        // DIATAS INI MEMAKAI PARAMETER
+    
+        // Fungsi ini menerima 2 parameter, mengolahnya, lalu mengembalikan hasilnya (return)
+        // function tambah(a, b) {
+        //     return a + b;
+        // }
+        // // Cara pakainya:
+        // let hasilJumlah = tambah(1, 10);
+
+        // alert(hasilJumlah);
+        // //  DIATAS INI RETURN
+
+        // DIBAWAH INI TANTANGAN
+         function formatpesan(nama) {
+            return "Halo " + nama + ", selamat belajar javascript";
+         }
+         
+         document.getElementById("kirim").onclick = function() {
+            let inputnama = document.getElementById("kotak").value;
+
+            //AMBIL HASIL OLAHAN DARI RETURN, LALU TAMPILKAN KE TEXTAREA
+            let hasilakhir = formatpesan(inputnama);
+            document.getElementById("kotak").value = hasilakhir;
+         }
+    </script>
+</body>
+</html>

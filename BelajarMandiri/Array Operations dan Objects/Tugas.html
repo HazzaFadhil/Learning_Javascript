@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Tim</title>
+</head>
+<body>
+    <h3>Daftar Anggota Tim</h3>
+    
+    <textarea id="kotak" placeholder="Ketik nama di sini..."></textarea><br><br>
+    <button id="tambah">Tambah Anggota</button>
+    <button id="hapus">Hapus Terakhir</button>
+
+    <h4>Daftar Tim Saat Ini:</h4>
+    <div id="tampilanTim"></div>
+
+    <script type="text/javascript">
+        // Array dibuat di LUAR event handler agar datanya tersimpan terus
+        let daftarTim = [];
+
+        // 1. FUNGSI TAMBAH
+        document.getElementById("tambah").onclick = function() {
+            let nama = document.getElementById("kotak").value;
+
+            if (nama !== "") {
+                daftarTim.push(nama); // Masukkan nama ke urutan paling belakang
+                document.getElementById("kotak").value = ""; // Kosongkan kotak
+                updateLayar();
+            }
+        };
+
+        // 2. FUNGSI HAPUS
+        document.getElementById("hapus").onclick = function() {
+            daftarTim.pop(); // Hapus nama paling belakang
+            updateLayar();
+        };
+
+        // 3. FUNGSI UPDATE LAYAR (Menggunakan Loop & Return/Output)
+        function updateLayar() {
+            let hasil = "";
+            for (let i = 0; i < daftarTim.length; i++) {
+                hasil += (i + 1) + ". " + daftarTim[i] + "<br>";
+            }
+            document.getElementById("tampilanTim").innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>
