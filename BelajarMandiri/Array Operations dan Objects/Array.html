@@ -1,11 +1,31 @@
 <script type="text/javascript">
-    let tim = ["Fadhil", "Zakki"];
+    // let tim = ["Fadhil", " Zakki"];
 
     // 1. Tambah Budi
-    tim.push("Budi");
-    alert("Setelah Push Budi: " + tim); // Keluar: Fadhil,Zakki,Budi
+    // tim.push(" Budi");
+    
+    // alert("Setelah Push Budi: " + tim); // Keluar: Fadhil,Zakki,Budi
 
+    // tim.pop();  
     // 2. Hapus Budi
-    tim.pop();
-    alert("Setelah Pop: " + tim);       // Keluar: Fadhil,Zakki
+    // tim.pop();  
+    // alert("Setelah Pop: " + tim);       // Keluar: Fadhil,Zakki
+    //-----------------------------------------------------------------------
+
+    //MENGENAL OBJECT: MENYIMPPAN DATA BERPASANGAN
+    //Kalau Array menyimpan data dalam bentuk daftar berurutan pakai 
+    // indeks angka (0, 1, 2), Object menyimpan data menggunakan 
+    // pasangan kunci & nilai (key: value).
+    //ANALOGINYA : KTP ATAU PROFIL PEMAIN
+
+    //DEKLARASI TERLEBIH DAHULU
+    let anggota = {
+        nama: "Fadhil Hazza Iswadinata",
+        peran: "developer",
+        umur: 19
+    };
+
+    //CARA AKSES NILAINYA
+    alert(anggota.nama);
+    alert(anggota.peran);
 </script>

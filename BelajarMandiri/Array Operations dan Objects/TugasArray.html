@@ -1,26 +1,53 @@
+<!-- TANTANGAN LATIHAN: APLIKASI PENDAFFTARAN TIM SEDERHANA
+
+Mari kita buat fitur di HTML kamu di mana setiap kali tombol diklik, 
+nama dari <textarea> akan dimasukkan ke dalam Array tim, lalu seluruh 
+daftar tim diperbarui ke layar! -->
+ 
+<!-- LANGKAH RACIK KODE
+
+Buat array kosong di luar fungsi onclick (supaya datanya tidak kereset tiap klik):
+let daftarTim = [];
+
+Di dalam onclick:
+
+Ambil nama yang diketik dari <textarea>.
+
+Masukkan nama tersebut ke array menggunakan push().
+
+Kosongkan kembali <textarea> agar siap diketik nama baru.
+
+Tampilkan jumlah anggota tim saat ini lewat alert("Total anggota: " + daftarTim.length);. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Latihan Array</title>
 </head>
 <body>
-    <!-- Buat Sistem kasir minimarket sederhana
-     Saya dimint untuk membuat program untuk mencatat barang yg dibeli
+    <h3>DAFTAR ANGGOTA KELOMPOK</h3>
+    <textarea id="kotak" placeholder="Masukkan kata kata disini"></textarea> <br>
+    <button id="input">Masukkan</button>
+    <button id="hapus">Hapus</button> 
+    <br><br>
 
+    <p>Anggota tim saat ini:</p>
+    <div id="tampilanTim"></div>
+    
+    <script> 
+    let AnggotaTim = [];
 
-     KETENTUAN: BUAT OBJECT, BUAT ARRAY KOSONG, MASUKKAN BARANG KE KERANJANG MEMAKAI apa?, 
-     BUAT FUNCTION HITUNG TOTAL, PANGGIL FUNGSI HITUNG ITU DAN TAMPILKAN DI ALERT, -->
+    document.getElementById("")
 
-     <h1>SISTEM KASIR MINIMARKET</h1>
+    tim.push(" Budi");
+    
+    // alert("Setelah Push Budi: " + tim);
 
-     <H2>Barang Belian</H2>
-     <textarea id="kotak" placeholder="Masukkan barang yang anda belu"></textarea><br>
-
-     <button id="kirim1">Hitung</button>
-     <button id="kirim2">Hapus</button>
-
+    
+    </script>
 
 </body>
 </html>
+
